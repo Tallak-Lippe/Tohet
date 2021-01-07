@@ -13,6 +13,7 @@ public class NormalMovement : Action
     float horizontal = 0;
 
     MovementInfo info;
+
     
 
     public void Act()
@@ -31,15 +32,20 @@ public class NormalMovement : Action
         else
             horizontal = 0;
 
-        Vector3 velocity = Vector3.Lerp(((Vector3.forward * vertical + Vector3.right * horizontal).normalized * info.speed), rb.velocity, info.movementBlend);
+        Vector3 targetDirection = (Vector3.forward * vertical + Vector3.right * horizontal).normalized;
+        targetDirection.y = 0;
+        Vector3 velocity = Vector3.Lerp((targetDirection * info.speed), rb.velocity, info.movementBlend);
 
         animator.SetBool("isWalking", (velocity.magnitude > info.animationTreshold));
+        animator.SetFloat("speed", velocity.magnitude);
 
         velocity.y = 0;
 
         if(velocity.magnitude != 0)
         {
-            transform.LookAt(transform.position + velocity);
+            Vector3 direction = transform.position + transform.forward;
+            direction.y = transform.position.y;
+            transform.LookAt(Vector3.Slerp(transform.position + targetDirection, direction , info.rotationBlend));
         }
 
         rb.velocity = velocity;

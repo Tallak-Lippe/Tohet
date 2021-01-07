@@ -8,4 +8,5 @@ public class MovementInfo
     public float speed;
     public float movementBlend;
     public float animationTreshold;
+    public float rotationBlend;
 }

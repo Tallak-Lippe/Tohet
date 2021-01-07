@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState startPlayerState;
     public Action action;
+
     public MovementInfo info;
     // Start is called before the first frame update
 
@@ -30,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
             case PlayerState.flipped:
                 action = new FlippedMovement(gameObject);
                 break;
+            case PlayerState.diamond:
+                action = new DiamondMovement(gameObject, info);
+                break;
         }
     }
 }
@@ -37,5 +41,6 @@ public class PlayerMovement : MonoBehaviour
 public enum PlayerState
 {
     normal,
+    diamond,
     flipped
 }
