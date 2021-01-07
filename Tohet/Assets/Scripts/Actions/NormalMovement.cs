@@ -6,11 +6,14 @@ public class NormalMovement : Action
 {
     GameObject player;
     Rigidbody rb;
+    Animator animator;
+    Transform transform;
     
     float vertical = 0;
     float horizontal = 0;
 
-    float speed = 1.5f;
+    MovementInfo info;
+    
 
     public void Act()
     {
@@ -28,12 +31,26 @@ public class NormalMovement : Action
         else
             horizontal = 0;
 
-        rb.velocity = (Vector3.forward * vertical + Vector3.right * horizontal) * speed; 
+        Vector3 velocity = Vector3.Lerp(((Vector3.forward * vertical + Vector3.right * horizontal).normalized * info.speed), rb.velocity, info.movementBlend);
+
+        animator.SetBool("isWalking", (velocity.magnitude > info.animationTreshold));
+
+        velocity.y = 0;
+
+        if(velocity.magnitude != 0)
+        {
+            transform.LookAt(transform.position + velocity);
+        }
+
+        rb.velocity = velocity;
     }
 
-    public NormalMovement(GameObject _player)
+    public NormalMovement(GameObject _player, MovementInfo _info)
     {
         player = _player;
         rb = player.GetComponent<Rigidbody>();
+        animator = player.GetComponent<Animator>();
+        transform = player.GetComponent<Transform>();
+        info = _info;
     }
 }

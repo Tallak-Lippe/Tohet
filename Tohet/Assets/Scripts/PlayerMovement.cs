@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState startPlayerState;
     public Action action;
+    public MovementInfo info;
     // Start is called before the first frame update
 
     private void Start()
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         switch (playerState)
         {
             case PlayerState.normal:
-                action = new NormalMovement(gameObject);
+                action = new NormalMovement(gameObject, info);
                 break;
             case PlayerState.flipped:
                 action = new FlippedMovement(gameObject);
