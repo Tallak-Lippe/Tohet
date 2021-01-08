@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SwitchColor : MonoBehaviour
 {
-    public List<Color> colors;
+
+    public GlobalColor globalColor;
+    List<Color> colors;
     public List<MeshRenderer> meshRenderers;
     public int startColorIndex;
 
@@ -14,6 +16,7 @@ public class SwitchColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        colors = globalColor.colors;
         currentColorIndex = startColorIndex; 
     }
 

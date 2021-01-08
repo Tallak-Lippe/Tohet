@@ -14,26 +14,21 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &7726541193902290229
-MonoBehaviour:
+--- !u!135 &3025147597377521477
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3822592299712711173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9fcf152f6ae46828b328dc407980f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPlayerState: 1
-  info:
-    speed: 10
-    movementBlend: 0
-    animationTreshold: 0
-    rotationBlend: 0
+  serializedVersion: 2
+  m_Radius: 0.575526
+  m_Center: {x: 0, y: 0.21872306, z: 0}
 --- !u!114 &1664452978631738752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,6 +47,7 @@ MonoBehaviour:
   - {fileID: 490251568697401755}
   - {fileID: 6502741680153264523}
   - {fileID: 7953768361271726638}
+  on: 0
 --- !u!114 &3814401857450711719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +75,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7726541193902290229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822592299712711173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9fcf152f6ae46828b328dc407980f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPlayerState: 1
+  info:
+    speed: 10
+    movementBlend: 0
+    animationTreshold: 0
+    rotationBlend: 0
 --- !u!1001 &4165260797461149524
 PrefabInstance:
   m_ObjectHideFlags: 0
