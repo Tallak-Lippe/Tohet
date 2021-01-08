@@ -5,8 +5,10 @@ using UnityEngine;
 public class MaterialSwitch : MonoBehaviour
 {
     public Material material;
-    
-    public List<Color> colors;
+
+    public GlobalColor colorData;
+
+   List<Color> colors;
     
     public int startColorIndex;
 
@@ -17,7 +19,8 @@ public class MaterialSwitch : MonoBehaviour
     void Start()
     {
         currentColorIndex = startColorIndex;
-        
+        colors = colorData.colors;
+        SetColor(currentColorIndex);
     }
 
     public void SetColor(int index)
