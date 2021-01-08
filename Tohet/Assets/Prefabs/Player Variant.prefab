@@ -35,6 +35,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1958906478864823991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7269774678553651769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac7ae89a3bfe64df3b9de4e1175c5fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 1076ab87555684ed796ad31e22d7cec5, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5321754008838718403}
+        m_MethodName: ToggleMeshRenderers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4775743539804025779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,10 +76,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPlayerState: 0
   info:
-    speed: 0
+    speed: 3
     movementBlend: 0
     animationTreshold: 0
-    rotationBlend: 0
+    rotationBlend: 0.7
 --- !u!114 &5321754008838718403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,33 +116,19 @@ MonoBehaviour:
   - {fileID: 601304859368095873}
   - {fileID: 2243687964037157762}
   on: 1
---- !u!114 &1958906478864823991
-MonoBehaviour:
+--- !u!65 &5594614639720234019
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7269774678553651769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac7ae89a3bfe64df3b9de4e1175c5fa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 1076ab87555684ed796ad31e22d7cec5, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5321754008838718403}
-        m_MethodName: ToggleMeshRenderers
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  serializedVersion: 2
+  m_Size: {x: 1.9619257, y: 1.8471081, z: 1.7994405}
+  m_Center: {x: 0, y: -0.38227352, z: 0.024773825}
 --- !u!1001 &7503564723483105128
 PrefabInstance:
   m_ObjectHideFlags: 0
