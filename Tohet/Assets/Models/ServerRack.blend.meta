@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89af9356160de44d3baec211d01179bd
+guid: a8ac6f1328fa14117804c65b2611d024
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,18 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Black
-    second: {fileID: 2100000, guid: 0bbcd866d82ef44548aafd56d734331f, type: 2}
+      name: Blue
+    second: {fileID: 2100000, guid: 5cdf1f4b6c2974d41906c98f97c8f2d4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Glowing
+      name: Grey
+    second: {fileID: 2100000, guid: 991da65f963524371a8d4f7a9b14b502, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InsideRist
     second: {fileID: 2100000, guid: 6123a741cdc77416c908ec8ddb5adf67, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: White
-    second: {fileID: 2100000, guid: b49be3a82102340ff88f7a609326009b, type: 2}
+      name: Lights
+    second: {fileID: 2100000, guid: 66c42f268dd034d669a716e8bc791d80, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -3,7 +3,27 @@ guid: fa8ce08f2ae1841de873925303b188a4
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arrows
+    second: {fileID: 2100000, guid: 5e9a198a93b4c4a9684c80a98d5e3878, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt
+    second: {fileID: 2100000, guid: d69ed40d186f84f3ab2441f911783ed5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Feet
+    second: {fileID: 2100000, guid: 2146fcdf2fac347ee8ac43140ddc2158, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sides
+    second: {fileID: 2100000, guid: 0bbcd866d82ef44548aafd56d734331f, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

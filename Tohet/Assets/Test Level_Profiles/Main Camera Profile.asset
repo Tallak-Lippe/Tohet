@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
   m_Name: ColorGrading
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1344,16 +1344,16 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 9.11
+    value: 5.52
   threshold:
     overrideState: 1
-    value: 1
+    value: 0.72
   softKnee:
     overrideState: 1
     value: 0
   clamp:
     overrideState: 1
-    value: 65472
+    value: 1.04
   diffusion:
     overrideState: 1
     value: 6.21
