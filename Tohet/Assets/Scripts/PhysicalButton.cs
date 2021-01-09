@@ -6,6 +6,8 @@ public class PhysicalButton : MonoBehaviour
 {
     public GameEvent ButtonPressed;
 
+    public bool RaiseOnExit = true;
+
     public KeyCode debugKey;
 
     private void Update()
@@ -16,8 +18,16 @@ public class PhysicalButton : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         ButtonPressed.Raise();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (RaiseOnExit)
+        {
+            ButtonPressed.Raise();
+        }
     }
 }
