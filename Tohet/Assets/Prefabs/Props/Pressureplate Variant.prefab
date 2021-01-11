@@ -26,6 +26,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonPressed: {fileID: 11400000, guid: 1076ab87555684ed796ad31e22d7cec5, type: 2}
+  tags:
+  - Diamond
+  - Player
   RaiseOnExit: 1
   debugKey: 0
 --- !u!1001 &1862214718584955750

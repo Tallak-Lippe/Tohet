@@ -29,6 +29,33 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.575526
   m_Center: {x: 0, y: 0.21872306, z: 0}
+--- !u!114 &-1873606451006455154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822592299712711173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac7ae89a3bfe64df3b9de4e1175c5fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 94789571fb23d42dc9fba1d0c0a3c28c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7726541193902290229}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1664452978631738752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPlayerState: 1
   info:
-    speed: 10
+    speed: 3
     movementBlend: 0
     animationTreshold: 0
     rotationBlend: 0
@@ -179,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DiamondFromAnotherDimenson Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ff26ea2de77a4e49bfcf40a3bffcc56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Diamond
       objectReference: {fileID: 0}
     - target: {fileID: 1541998606474349963, guid: 4ff26ea2de77a4e49bfcf40a3bffcc56,
         type: 3}
